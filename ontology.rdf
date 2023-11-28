@@ -1,0 +1,611 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14/"
+     xml:base="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#AcademicPerformanceBelongsToStudent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#AcademicPerformanceBelongsToStudent">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentHasAcademicPerformance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#AdmissionTypeBelongsToStudent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#AdmissionTypeBelongsToStudent">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentHasAdmissionType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#CourseSubjectHadGrade -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#CourseSubjectHadGrade">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#GradeBelongsToCourseSubject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#CourseSubjectWasTakenByStudent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#CourseSubjectWasTakenByStudent">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentCompletedSubject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#DropoutPeriodBelongsToStudent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#DropoutPeriodBelongsToStudent">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentDroppedOutInPeriod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#EthnicityBelongsToStudent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#EthnicityBelongsToStudent">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentHasEthnicity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#GenderBelongsToStudent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#GenderBelongsToStudent">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentHasGender"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#GradeBelongsToCourseSubject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#GradeBelongsToCourseSubject">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Grade"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#CourseSubject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#GradeBelongsToStudent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#GradeBelongsToStudent">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentObtainedGrade"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#NativityBelongsToStudent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#NativityBelongsToStudent">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentHasNativity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentCompletedSubject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentCompletedSubject">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentObtainedGrade"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#GradeBelongsToCourseSubject"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentDroppedOutInPeriod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentDroppedOutInPeriod">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#PeriodDropout"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentHasAcademicPerformance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentHasAcademicPerformance">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#AcademicPerformance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentHasAdmissionType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentHasAdmissionType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#AdmissionType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentHasEthnicity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentHasEthnicity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Ethnicity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentHasGender -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentHasGender">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Gender"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentHasNativity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentHasNativity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Nativity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentHasStatus -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentHasStatus">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Status"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentObtainedGrade -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentObtainedGrade">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Grade"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentReceivedStudentAssistance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentReceivedStudentAssistance">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentReceivesStudentAid"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentAssistance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentReceivesStudentAid -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentReceivesStudentAid"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#AdmissionSemester -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#AdmissionSemester">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#AdmissionYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#AdmissionYear">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Count_RI -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Count_RI">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Count_TM -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Count_TM">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#CreditsInCourse -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#CreditsInCourse">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Grade"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#GradeValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#GradeValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Grade"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#SemesterInCourse -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#SemesterInCourse">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Grade"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#YearInCourse -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#YearInCourse">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Grade"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#AcademicPerformance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#AcademicPerformance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Active -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Active">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#AdmissionType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#AdmissionType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Black -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Black">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Ethnicity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Brown -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Brown">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Ethnicity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Completed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Completed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#CourseSubject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#CourseSubject"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#EighthOrGreater -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#EighthOrGreater">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#PeriodDropout"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Ethnicity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Ethnicity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Excellent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Excellent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#AcademicPerformance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Female -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Female">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Gender"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#FirstToThird -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#FirstToThird">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#PeriodDropout"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#FourthToSeventh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#FourthToSeventh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#PeriodDropout"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Gender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Gender"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Good -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Good">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#AcademicPerformance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Grade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Grade"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Indigenous -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Indigenous">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Ethnicity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Insufficient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Insufficient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#AcademicPerformance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#JuizdeForaNative -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#JuizdeForaNative">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Nativity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Male -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Male">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Gender"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Nativity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Nativity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#NonJuizdeForaNative -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#NonJuizdeForaNative">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Nativity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#NonQuota -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#NonQuota">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#AdmissionType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#NotReceived -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#NotReceived">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentAssistance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#PeriodDropout -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#PeriodDropout"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Quota -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Quota">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#AdmissionType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Received -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Received">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentAssistance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Regular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Regular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#AcademicPerformance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Status -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Status"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Student"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentAssistance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentAssistance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Undertemined -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Undertemined">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Gender"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Unknown -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Unknown">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Ethnicity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#White -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#White">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Ethnicity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Withdrawn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Withdrawn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Yellow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Yellow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Ethnicity"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#AcademicPerformance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#AdmissionType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#CourseSubject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Ethnicity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Gender"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Grade"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Nativity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#PeriodDropout"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Status"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#Student"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jo_az/ontologies/2023/10/untitled-ontology-14#StudentAssistance"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
